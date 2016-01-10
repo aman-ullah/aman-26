@@ -73,7 +73,7 @@ curl_setopt($curl_request, CURLOPT_URL, 'https://api.twitter.com/1.1/statuses/us
 $json = curl_exec($curl_request);
 //echo $json;
 curl_close($curl_request);
-echo $json;
+echo 'hello;
 		
 		/*$this->load->library('rest', array('server' => 'http://twitter.com/'));
  
