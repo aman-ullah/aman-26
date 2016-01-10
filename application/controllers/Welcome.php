@@ -76,8 +76,9 @@ curl_close($curl_request);
 echo 'hello';
 //echo $json;
 
-array = json_decode($json);
+$array = json_decode($json);
 echo array->created_at;
+echo '....';
 		
 		/*$this->load->library('rest', array('server' => 'http://twitter.com/'));
  
