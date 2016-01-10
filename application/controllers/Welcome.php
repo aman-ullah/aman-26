@@ -23,6 +23,7 @@ class Welcome extends REST_Controller {
 	public function index()
 	{
 		$this->load->helper('url');
+		echo 'high';
 		
 		$this->load->library('rest', array('server' => 'http://twitter.com/'));
  
