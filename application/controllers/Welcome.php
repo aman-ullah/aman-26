@@ -71,7 +71,7 @@ curl_setopt($curl_request, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($curl_request, CURLOPT_URL, 'https://api.twitter.com/1.1/statuses/user_timeline.json?count=TOTAL_COUNT_YOU_WANT&screen_name=premierleague');
 
 $json = curl_exec($curl_request);
-echo $json;
+//echo $json;
 curl_close($curl_request);
 
 		
