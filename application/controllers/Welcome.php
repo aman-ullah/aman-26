@@ -74,7 +74,7 @@ $json = curl_exec($curl_request);
 curl_close($curl_request);
 
 		
-		$this->load->library('rest', array('server' => 'http://twitter.com/'));
+		/*$this->load->library('rest', array('server' => 'http://twitter.com/'));
  
 		$user = $this->rest->get('users/show', array('screen_name' => 'Aman Ullah Aman'));
 		
@@ -84,9 +84,9 @@ curl_close($curl_request);
 		'http_pass' => 'asdzxc1',
 		'http_auth' => 'basic'
 ));
-
+*/
 	$this->load->view('welcome_message');
-	$user = $this->rest->post('statuses/update.json', array('status' => 'Using the REST client to do stuff'));	
+//$user = $this->rest->post('statuses/update.json', array('status' => 'Using the REST client to do stuff'));	
 		$this->load->view('welcome_message');
 	}
 	
