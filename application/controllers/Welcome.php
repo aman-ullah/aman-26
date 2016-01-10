@@ -37,4 +37,12 @@ class Welcome extends REST_Controller {
 	$user = $this->rest->post('statuses/update.json', array('status' => 'Using the REST client to do stuff'));	
 		$this->load->view('welcome_message');
 	}
+	
+	function user_get(){
+	
+	}
+	
+	function users_get(){
+	
+	}
 }
