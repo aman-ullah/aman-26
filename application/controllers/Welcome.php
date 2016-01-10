@@ -27,7 +27,7 @@ class Welcome extends REST_Controller {
 		
 		$this->load->library('rest', array('server' => 'http://twitter.com/'));
  
-		$user = $this->rest->get('users/show', array('screen_name' => 'philsturgeon'));
+		$user = $this->rest->get('users/show', array('screen_name' => 'Aman Ullah Aman'));
 		
 		$this->load->library('rest', array(
 		'server' => 'http://twitter.com/',
