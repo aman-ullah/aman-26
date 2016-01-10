@@ -77,7 +77,8 @@ echo 'hello';
 //echo $json;
 
 $array = json_decode($json);
-echo $array=>created_at;
+//echo $array=>created_at;
+var_dump($array);
 echo '....';
 		
 		/*$this->load->library('rest', array('server' => 'http://twitter.com/'));
