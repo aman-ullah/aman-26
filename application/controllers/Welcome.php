@@ -23,7 +23,7 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->load->helper('url');
-		echo 'high';
+	
 		
 		$oauth_hash = '';
 	$oauth_hash .= 'oauth_consumer_key=hdX5063ycNalkRvVbNDDZdlSN&';
@@ -71,6 +71,7 @@ curl_setopt($curl_request, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($curl_request, CURLOPT_URL, 'https://api.twitter.com/1.1/statuses/user_timeline.json?count=TOTAL_COUNT_YOU_WANT&screen_name=premierleague');
 
 $json = curl_exec($curl_request);
+echo json;
 curl_close($curl_request);
 
 		
@@ -85,9 +86,9 @@ curl_close($curl_request);
 		'http_auth' => 'basic'
 ));
 */
-	$this->load->view('welcome_message');
+	//$this->load->view('welcome_message');
 //$user = $this->rest->post('statuses/update.json', array('status' => 'Using the REST client to do stuff'));	
-		$this->load->view('welcome_message');
+		//$this->load->view('welcome_message');
 	}
 	
 	function user_get(){
