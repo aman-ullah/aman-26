@@ -1,7 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+require(APPPATH'.libraries/REST_Controller.php');
 
-class Welcome extends CI_Controller {
+
+class Welcome extends REST_Controller {
 
 	/**
 	 * Index Page for this controller.
