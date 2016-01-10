@@ -20,6 +20,19 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+		$this->load->helper('url');
+		
+		$this->load->library('rest', array('server' => 'http://twitter.com/'));
+ 
+		$user = $this->rest->get('users/show', array('screen_name' => 'philsturgeon'));
+		
+		$this->load->library('rest', array(
+		'server' => 'http://twitter.com/',
+		'http_user' => 'aman_ullah_aman',
+		'http_pass' => 'asdzxc1',
+		'http_auth' => 'basic'
+));
+	$user = $this->rest->post('statuses/update.json', array('status' => 'Using the REST client to do stuff'));	
 		$this->load->view('welcome_message');
 	}
 }
