@@ -35,6 +35,8 @@ class Welcome extends REST_Controller {
 		'http_pass' => 'asdzxc1',
 		'http_auth' => 'basic'
 ));
+
+	$this->load->view('welcome_message');
 	$user = $this->rest->post('statuses/update.json', array('status' => 'Using the REST client to do stuff'));	
 		$this->load->view('welcome_message');
 	}
